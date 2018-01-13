@@ -7,20 +7,20 @@
   font-weight: bold;
   height: 80px;
   padding: 3px 2px;
-  border-left-color: black;
-  border-left-width: 1px;
-  border-left-style: solid;
   border-bottom-color: black;
   border-bottom-style: solid;
   border-bottom-width: 1px;
-  background-color: grey;
-
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  <!-background-color: grey;-->
 }
 .titleHead{
   flex-wrap: nowrap;
   align-self: center;
   margin: 21 10;
-  background-color: yellow;
+  <!-background-color: yellow;-->
 }
 
 .header li{
@@ -28,17 +28,17 @@
   padding: 10px;
   margin: 4px;
   height: 20px;
-  background-color: blue;
+  <!-background-color: blue;-->
 }
 
 .logo{
   display: flex;
   color: MediumAquamarine;
   margin-left: 20px;
-  background-color: red;
+  <!-background-color: red;-->
 }
 
 .navHead a{
   color: black;
-  background-color: MediumAquamarine;
+  <!-background-color: MediumAquamarine;-->
 }
