@@ -1,6 +1,3 @@
-html{
-}
-
 .header {
   display: flex;
   justify-content: space-between;
@@ -9,30 +6,39 @@ html{
   font-size: 14px;
   font-weight: bold;
   height: 80px;
+  padding: 3px 2px;
+  border-left-color: black;
+  border-left-width: 1px;
+  border-left-style: solid;
   border-bottom-color: black;
   border-bottom-style: solid;
   border-bottom-width: 1px;
+  background-color: grey;
+
 }
 .titleHead{
   flex-wrap: nowrap;
   align-self: center;
-  margin: 20 10;
+  margin: 21 10;
+  background-color: yellow;
 }
 
 .header li{
   display: inline;
   padding: 10px;
-  margin: 4px
-  height: 60px;
+  margin: 4px;
+  height: 20px;
+  background-color: blue;
 }
 
 .logo{
   display: flex;
   color: MediumAquamarine;
   margin-left: 20px;
+  background-color: red;
 }
 
 .navHead a{
-  align-self: center;
   color: black;
+  background-color: MediumAquamarine;
 }
