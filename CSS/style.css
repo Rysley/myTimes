@@ -1,3 +1,7 @@
+/*
+* ----- HEADER STYLE -----
+*/
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -14,7 +18,8 @@
   top: 0px;
   left: 0px;
   right: 0px;
-  <!-background-color: grey;-->
+  z-index: 10;
+  background-color: white;
 }
 .titleHead{
   flex-wrap: nowrap;
@@ -41,4 +46,44 @@
 .navHead a{
   color: black;
   <!-background-color: MediumAquamarine;-->
+}
+
+/*
+* ----- CONTAINER STYLE -----
+*/
+
+.container{
+display: flex;
+align-items: flex-start;
+justify-content: center;
+margin-top: 100px;
+width: 100%;
+height: auto;
+background-color: blue;
+position: absolute;
+left: 0px;
+right: 0px;
+}
+
+.column{
+background-color: grey;
+}
+
+#first.column{
+  margin: 20px 10px;
+  border: 2px solid black;
+  min-width: 630px;
+  height: 150px;
+}
+#second.column{
+  margin: 20px 10px;
+  border: 2px solid black;
+  min-width: 300px;
+  height: 150px;
+}
+#third.column{
+  margin: 20px 10px;
+  border: 2px solid black;
+  min-width: 240px;
+  height: 150px;
 }
