@@ -59,31 +59,67 @@ justify-content: center;
 margin-top: 100px;
 width: 100%;
 height: auto;
-background-color: blue;
+background-color: lightgrey;
 position: absolute;
 left: 0px;
 right: 0px;
 }
 
 .column{
-background-color: grey;
+background-color: MediumAquamarine;
 }
 
 #first.column{
   margin: 20px 10px;
   border: 2px solid black;
   min-width: 630px;
-  height: 150px;
+  max-width: 630px;
+  height: auto;
 }
 #second.column{
   margin: 20px 10px;
   border: 2px solid black;
   min-width: 300px;
-  height: 150px;
+  max-width: 300px;
+  height: auto;
 }
 #third.column{
   margin: 20px 10px;
   border: 2px solid black;
   min-width: 240px;
-  height: 150px;
+  max-width: 240px;
+  height: auto;
+}
+
+.news{
+  border: 1px solid red;
+  background-color: yellow;
+  margin-top: 0px;
+  padding-top: 0px;
+}
+
+.news p{
+  margin: 0px;
+}
+
+.image-container{
+  display: flex;
+  justify-content: center;
+}
+
+.image-container #mother{
+  font-family: Georgia;
+  font-weight: bold;
+  font-size: 40px;
+  color: white;
+  margin-top: 0px;
+  /* Ask advisor on-line why the image wont show in whole*/
+}
+
+#mainStory{
+  background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-main.png);
+  width: 630px;
+  height: 300px;
+  /*background-position: top-left;
+  /*background-size: cover;
 }
