@@ -78,7 +78,11 @@ h3{
   text-align: left;
 }
 
-/* ------- FlexBox Proprieties ------ */
+p{
+  margin-bottom: 50px;
+}
+
+/* ------- FlexBox Properties ------ */
 
 .container{
 display: inline-flex;
@@ -87,7 +91,7 @@ justify-content: center;
 flex: 0 0 200px;
 margin-top: 120px;
 width: 100%;
-height: 600px;
+height: auto;
 background-color: lightgrey;
 position: absolute;
 left: 0px;
@@ -126,9 +130,9 @@ margin: 10;
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
-  flex-flow: : column nowrap;
+  flex-direction: column;
   width: 100%;
-  height: 150px;
+  height: auto;
   border: 1px solid red;
   background-color: yellow;
   /*margin: 5px;*/
@@ -159,6 +163,7 @@ margin: 10;
   height: auto;
   border: 0px solid red;
   background-color: orange;
+  margin-top: 5px;
   /*margin: 5px;*/
 }
 
@@ -175,6 +180,25 @@ margin: 10;
   border: 1px solid white;
   background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-main.png);
 }
+
+.image{
+  width: 300px;
+  height: 300px;
+  border: 0px solid white;
+  }
+
+#fall.image{
+  background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-2.png);
+}
+
+#hipster.image{
+  background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-3.png);
+}
+
+#cats.image{
+  background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-1.png);
+}
+
 
 .mainStory{
   width: 630px;
