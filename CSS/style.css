@@ -80,7 +80,7 @@ text-align: left;
 /* ------- FlexBox Proprieties ------ */
 
 .container{
-display: flex;
+display: inline-flex;
 align-items: stretch;
 justify-content: center;
 flex: 0 0 200px;
@@ -93,23 +93,62 @@ left: 0px;
 right: 0px;
 }
 
-.column{
+/*.column{
 display: flex;
 flex-direction: column;
 min-width: 300px;
 background-color: MediumAquamarine;
 margin: 10;
+}*/
+
+.columnFirst{
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+min-width: 630px;
+max-width: 630px;
+background-color: MediumAquamarine;
+margin: 10;
+}
+
+.columnSecond{
+display: flex;
+flex-direction: column;
+min-width: 300px;
+max-width: 300px;
+background-color: MediumAquamarine;
+margin: 10;
+}
+
+.columnThird{
+display: flex;
+flex-direction: column;
+min-width: 240px;
+max-width: 240px;
+background-color: MediumAquamarine;
+margin: 10;
 }
 
 .news{
-  flex-wrap: wrap;
-  width: 60px;
-  height: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100px;
+  height: 150px;
   border: 1px solid red;
   background-color: yellow;
-  margin-top: 0px;
-  padding-top: 0px;
+  margin: 5px;
 }
+
+
+.headline{
+width: 20px;
+height: 30px;
+background-color: pink;
+border: 1px solid black;
+}
+
 
 /*#first.column{
   flex-wrap: wrap;
@@ -169,7 +208,7 @@ margin: 10;
   color: white;
   margin-top: 0px;
 }*/
-/*
+
 #mainStory{
   background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-main.png);
   width: 630px;
