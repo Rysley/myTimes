@@ -52,13 +52,41 @@
 * ----- CONTAINER STYLE -----
 */
 
+/*
+* ----- Headlines STYLE -----
+*/
+h1{
+font-family: Georgia;
+font-weight: bold;
+font-size: 40px;
+color: white;
+}
+
+h2 {
+font-family: Georgia;
+font-weight: bold;
+font-size: 30px;
+color: white;
+text-align: center;
+}
+
+h3{
+font-family: Georgia;
+font-weight: bold;
+font-size: 20px;
+text-align: left;
+}
+
+/* ------- FlexBox Proprieties ------ */
+
 .container{
 display: flex;
-align-items: flex-start;
+align-items: stretch;
 justify-content: center;
-margin-top: 100px;
+flex: 0 0 200px;
+margin-top: 120px;
 width: 100%;
-height: auto;
+height: 600px;
 background-color: lightgrey;
 position: absolute;
 left: 0px;
@@ -66,13 +94,28 @@ right: 0px;
 }
 
 .column{
+display: flex;
+flex-direction: column;
+min-width: 300px;
 background-color: MediumAquamarine;
+margin: 10;
 }
 
-#first.column{
+.news{
+  flex-wrap: wrap;
+  width: 60px;
+  height: 60px;
+  border: 1px solid red;
+  background-color: yellow;
+  margin-top: 0px;
+  padding-top: 0px;
+}
+
+/*#first.column{
+  flex-wrap: wrap;
   margin: 20px 10px;
   border: 2px solid black;
-  min-width: 630px;
+  min-width: 300px;
   max-width: 630px;
   height: auto;
 }
@@ -89,37 +132,74 @@ background-color: MediumAquamarine;
   min-width: 240px;
   max-width: 240px;
   height: auto;
-}
+}*/
 
-.news{
-  border: 1px solid red;
-  background-color: yellow;
-  margin-top: 0px;
-  padding-top: 0px;
-}
-
+/*
 .news p{
   margin: 0px;
+  font-family: Georgia;
+  font-size: 17px;
+  color: black;
 }
 
 .image-container{
   display: flex;
   justify-content: center;
+  align-items: center;
+/*  font-family: Georgia;
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
+  margin-top: 0px;*/
 }
 
-.image-container #mother{
+/*.image-container #mother{
   font-family: Georgia;
   font-weight: bold;
   font-size: 40px;
   color: white;
   margin-top: 0px;
-  /* Ask advisor on-line why the image wont show in whole*/
 }
-
+  /* Ask advisor on-line why the image wont show in whole*/
+/*
+.image-container #earth{
+  font-family: Georgia;
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
+  margin-top: 0px;
+}*/
+/*
 #mainStory{
   background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-main.png);
   width: 630px;
   height: 300px;
-  /*background-position: top-left;
-  /*background-size: cover;
+  /*background-position: top-left;*/
+  /*background-size: cover;*/
+}
+
+/*
+.news #earth{
+  background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-2.png);
+  /*width: 630px;*/
+/*  height: 300px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+*/
+
+/*
+.news #hipster{
+  background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-3.png);
+  /*width: 630px;*/
+/*  height: 300px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+.news #cats{
+  background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-1.png);
+  width: 298px;
+  height: 300px;
+  margin-bottom: 0px;
+  margin-top: 0px;
 }
