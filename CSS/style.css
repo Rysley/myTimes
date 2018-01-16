@@ -266,3 +266,32 @@ background-color: WhiteSmoke;
   background-color: white;
   border: 1px solid black;
 }
+
+/*
+* ------ Footer Style ------
+*/
+
+.footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: MediumAquamarine;
+  width: 100%;
+  height: 350px;
+  bottom: -1300px;
+  left: 0px;
+  right: 0px;
+  position: relative;
+}
+
+.footer li{
+  display: inline;
+  padding: 10px;
+  margin: 4px;
+  height: 20px;
+}
+
+.footer span{
+  color: white;
+}
