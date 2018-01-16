@@ -76,11 +76,15 @@ h3{
   font-weight: bold;
   font-size: 20px;
   text-align: left;
+  margin-bottom: 0px;
 }
 
-p{
-  margin-bottom: 50px;
+h3.news{
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
 }
+
 
 /* ------- FlexBox Properties ------ */
 
@@ -136,7 +140,7 @@ margin: 10;
   border: 1px solid red;
   background-color: yellow;
   /*margin: 5px;*/
-}
+  }
 
 .new1{
   display: flex;
@@ -155,16 +159,28 @@ margin: 10;
 .new2{
   display: flex;
   justify-content: flex-start;
-  align-items: flex-start;
+  align-items: center;
   flex-direction: row;
   /*flex-flow: : column nowrap;*/
   flex-wrap: wrap;
   width: 48%;
-  height: auto;
+  /*height: auto;*/
+  min-height: 250px;
   border: 0px solid red;
   background-color: orange;
   margin-top: 5px;
   /*margin: 5px;*/
+}
+
+.newsBites{
+display: flex;
+flex-direction: column;
+justify-content: flex-start;
+align-items: center;
+background-color: WhiteSmoke;
+height: 20px;
+width: 240px;
+border-bottom-color: 1 solid black;
 }
 
 .headline{
@@ -187,6 +203,15 @@ margin: 10;
   border: 0px solid white;
   }
 
+.biteHEAD{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 240px;
+  height: 60px;
+  background-color: white;
+}
+
 #fall.image{
   background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-2.png);
 }
@@ -199,6 +224,11 @@ margin: 10;
   background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-1.png);
 }
 
+#cookie.image{
+  width: 100%;
+  height: 250px;
+  background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-news-bite.png);
+}
 
 .mainStory{
   width: 630px;
